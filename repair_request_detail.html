@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair Request Detail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <div class="avatar"></div>
+                <p>Technical Staff</p>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="active">
+                        <a href="#" class="assignment">Assignment</a>
+                        <ul class="submenu">
+                            <li><a href="#">System maintenance</a></li>
+                            <li class="active"><a href="#">Request a repair</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Work contract</a></li>
+                    <li><a href="#">Edit profile</a></li>
+                </ul>
+            </nav>
+            <button class="signout">Sign out</button>
+        </aside>
+
+        <main class="main-content">
+            <h1>Apartment management in the United States</h1>
+            <div class="details-form">
+                <a href="list_repair_requirements.html">
+                    <button class="back-btn">
+                        <span>&larr;</span>
+                    </button>
+                </a>
+                <h2>REPAIR REQUEST DETAIL</h2>
+                <form action="#">
+                    <label for="request-id">Request ID</label>
+                    <input type="text" id="request-id" value="RQ001" readonly>
+
+                    <label for="account">Account</label>
+                    <input type="text" id="account" value="AC001" readonly>
+
+                    <label for="request-date">Request date</label>
+                    <input type="date" id="request-date" value="2024-01-01">
+
+                    <label for="expect-date">Expect date</label>
+                    <input type="date" id="expect-date" value="2024-10-01">
+
+                    <label for="maintenance-equipment">Maintenance equipment</label>
+                    <select id="maintenance-equipment">
+                        <option selected>Air conditioner</option>
+                        <option>Heating</option>
+                        <option>Lighting</option>
+                    </select>
+
+                    <label for="building">Building</label>
+                    <input type="text" id="building" value="A">
+
+                    <label for="apartment">Apartment</label>
+                    <input type="text" id="apartment" value="123">
+
+                    <label for="repair-content">Repair content</label>
+                    <textarea id="repair-content">...</textarea>
+
+                    <label for="image-video">Image/Video</label>
+                    <input type="file" id="image-video" accept="image/*,video/*">
+
+                    <hr>
+
+                    <label for="operating-status">Operating status</label>
+                    <select id="operating-status">
+                        <option>Normal</option>
+                        <option>Ongoing</option>
+                        <option>Complete</option>
+                    </select>
+
+                    <label for="maintenance-status">Maintenance status</label>
+                    <select id="maintenance-status">
+                        <option>Ongoing</option>
+                        <option>Complete</option>
+                        <option>Pending</option>
+                    </select>
+
+                    <label for="note">Note</label>
+                    <textarea id="note">...</textarea>
+
+                    <button type="submit" class="update-btn">Update</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

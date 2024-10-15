@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details of System Condition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <div class="avatar"></div>
+                <p>Technical Staff</p>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="active">
+                        <a href="#" class="assignment">Assignment</a>
+                        <ul class="submenu">
+                            <li class="active"><a href="#">System maintenance</a></li>
+                            <li><a href="#">Request a repair</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Work contract</a></li>
+                    <li><a href="#">Edit profile</a></li>
+                </ul>
+            </nav>
+            <button class="signout">Sign out</button>
+        </aside>
+
+        <main class="main-content">
+            <h1>Apartment management in the United States</h1>
+            <div class="details-form">
+                <a href="system_maintenance.html">
+                    <button class="back-btn">
+                        <span>&larr;</span>
+                    </button>
+                </a>
+                <h2>DETAILS OF SYSTEM CONDITION</h2>
+                <form action="#">
+                    <label for="system-id">System ID</label>
+                    <input type="text" id="system-id" value="TM01">
+
+                    <label for="location">Location</label>
+                    <input type="text" id="location" value="Tầng 1">
+
+                    <label for="status">Status</label>
+                    <select id="status">
+                        <option selected>HD bình thường</option>
+                        <option>HD bất thường</option>
+                    </select>
+
+                    <label for="nearest-maintenance">Nearest maintenance</label>
+                    <input type="date" id="nearest-maintenance" value="2024-01-01">
+
+                    <label for="next-maintenance">Next maintenance</label>
+                    <input type="date" id="next-maintenance" value="2024-11-01">
+
+                    <label for="service-provider">Service provider</label>
+                    <input type="text" id="service-provider" value="...">
+
+                    <label for="technical-condition">Technical condition</label>
+                    <input type="text" id="technical-condition" value="...">
+
+                    <label for="installation-date">Installation date</label>
+                    <input type="text" id="installation-date" value="...">
+
+                    <label for="maintenance-times">Number of maintenance times</label>
+                    <input type="text" id="maintenance-times" value="...">
+
+                    <hr>
+
+                    <label for="operating-status">Operating status</label>
+                    <select id="operating-status">
+                        <option selected>Normal</option>
+                        <option>Ongoing</option>
+                        <option>Complete</option>
+                    </select>
+
+                    <label for="maintenance-status">Maintenance status</label>
+                    <select id="maintenance-status">
+                        <option selected>Ongoing</option>
+                        <option>Complete</option>
+                        <option>Pending</option>
+                    </select>
+
+                    <label for="note">Note</label>
+                    <textarea id="note"></textarea>
+
+                    <button type="submit" class="update-btn">Update</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

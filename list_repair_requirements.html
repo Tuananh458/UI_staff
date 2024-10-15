@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Repair Requirements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <div class="avatar"></div>
+                <p>Technical Staff</p>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="active">
+                        <a href="#" class="assignment">Assignment</a>
+                        <ul class="submenu">
+                            <li><a href="system_maintenance.html">System maintenance</a></li>
+                            <li class="active"><a href="#">Request a repair</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Work contract</a></li>
+                    <li><a href="#">Edit profile</a></li>
+                </ul>
+            </nav>
+            <button class="signout">Sign out</button>
+        </aside>
+
+        <main class="main-content">
+            <h1>Apartment management in the United States</h1>
+            <div class="title_screen">
+                <h2>LIST OF REPAIR REQUIREMENTS</h2>
+                <div class="filters">
+                    <input type="text" class="search-bar" placeholder="Search...">
+                    <div class="filter-group">
+                        <label for="status-select">Select status</label>
+                        <select id="status-select">
+                            <option>Waiting</option>
+                            <option>Ongoing</option>
+                            <option>Complete</option>
+                        </select>
+                    </div>
+                </div>
+
+                <table class="repair-table">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>Request ID</th>
+                            <th>Account</th>
+                            <th>Request date</th>
+                            <th>Maintenance equipment</th>
+                            <th>Processing status</th>
+                            <th>Detail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td><a href="repair_request_detail.html">RQ001</a></td>
+                            <td>AC001</td>
+                            <td>01/01/2024</td>
+                            <td>Air conditioner</td>
+                            <td>
+                                <select>
+                                    <option>Waiting</option>
+                                    <option>Ongoing</option>
+                                    <option>Complete</option>
+                                </select>
+                            </td>
+                            <td><a href="repair_request_detail.html"><button>Detail</button></a></td>
+                        </tr>
+                        <!-- Repeat rows as needed -->
+                    </tbody>
+                </table>
+
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">&raquo;</a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
